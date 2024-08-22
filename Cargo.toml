@@ -1,0 +1,24 @@
+[package]
+name = "example"
+edition = "2021"
+version = "0.0.0"
+publish = false
+
+[dependencies]
+yew = "0.19"
+js-sys = "0.3"
+wasm-bindgen = "0.2"
+gloo-console = "0.2"
+
+[dependencies.stylist]
+version = "0.10"
+features = ["yew_integration"]
+
+[dependencies.web-sys]
+version = "0.3"
+features = ["HtmlCanvasElement", "HtmlImageElement"]
+
+[dependencies.yew-interop]
+git = "https://github.com/Madoshakalaka/yew-interop.git"
+features = ["script", "yew-stable"]
+
